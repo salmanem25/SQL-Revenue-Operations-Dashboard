@@ -31,30 +31,30 @@ All sources are merged into structured local staging tables (`accounts`, `subscr
 ```
 .
 ├── dashboard/
-│   ├── generate_charts.py          # Programmatic visualization compiler script
-│   └── dashboard_snapshot.png      # Generated executive graphic asset layer
+│   ├── generate_charts.py                                      # Programmatic visualization compiler script
+│   └── dashboard_snapshot.png                                  # Generated executive graphic asset layer
 ├── data/
-│   ├── ravenstack_accounts.csv     # Raw source transactional files
+│   ├── ravenstack_accounts.csv                                 # Raw source transactional files
 │   ├── ravenstack_churn_events.csv
 |   ├── ravenstack_feature_usage.csv
 |   ├── ravenstack_subscriptions.csv
 |   └── ravenstack_support_tickets.csv
 |
 ├── results/
-│   ├── mau_trend.txt               # Aggregated time-series query outputs
+│   ├── mau_trend.txt                                           # Aggregated time-series query outputs
 │   ├── cohort_retention_metrics.txt
 |   └── acquisition_channel_total_acquired.txt
 |
 ├── sql/
-│   ├── ravenstack.db               # Compiled SQLite active target database
-│   ├── sql_01_schema_database_architecture_initialization           # Database architecture initialization (DDL)
-│   ├── sql_02_schema_staging_transformation_and_verification           # Ingestion QA & row verification sequences
-│   ├── sql_03_schema_table_mapping_alignment           # Post-import schema mapping configurations
-│   ├── sql_04_schema_production_data_cleaning           # Data validation and NULL conversions
-│   ├── sql_05_schema_monthly_active_users_(MAU)_trend_line           # Query 1: Monthly Active Users trend calculations
-│   ├── sql_06_schema_cohort_retention_metrics           # Query 2: Cohort retention survival curve scripts
-│   └── sql_07_schema_clv_by_channel           # Query 3: CLV analysis by acquisition channel
-└── README.md                       # This file
+│   ├── ravenstack.db                                           # Compiled SQLite active target database
+│   ├── sql_01_schema_database_architecture_initialization      # Database architecture initialization (DDL)
+│   ├── sql_02_schema_staging_transformation_and_verification   # Ingestion QA & row verification sequences
+│   ├── sql_03_schema_table_mapping_alignment                   # Post-import schema mapping configurations
+│   ├── sql_04_schema_production_data_cleaning                  # Data validation and NULL conversions
+│   ├── sql_05_schema_monthly_active_users_(MAU)_trend_line     # Query 1: Monthly Active Users trend calculations
+│   ├── sql_06_schema_cohort_retention_metrics                  # Query 2: Cohort retention survival curve scripts
+│   └── sql_07_schema_clv_by_channel                            # Query 3: CLV analysis by acquisition channel
+└── README.md                                                   # This file
 ```
 
 ---
